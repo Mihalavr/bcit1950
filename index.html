@@ -2,8 +2,57 @@
 	<html>
 	<head>
 		<title>My GitHub Test Changed</title>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				$("#hide").click(function() {
+					$("#box").hide(1);
+				});
+
+				$("#show").click(function() {
+					$("#box").show(1000);
+				});
+
+				$("#toggle").click(function() {
+					$("#box").toggle(1000);
+				});
+
+				$("#slideup").click(function() {
+					$("#box").slideUp(1000);
+				});
+
+				$("#slidedown").click(function() {
+					$("#box").slideDown(1000);
+				});
+			});
+
+		</script>
+
+		<style>
+			#box {
+				width: 500px;
+				height: 400px;
+				background-color: cornflowerblue;
+			}
+		</style>
+
 	</head>
 	<body>
+
+		<h1>jQuery Test</h1>
+
+		<ul>
+			<li id="hide"><a href="#">Hide</a></li>
+			<li id="show"><a href="#">Show</a></li>
+			<li id="toggle"><a href="#">Toggle</a></li>
+			<li id="slideup"><a href="#">SlideUp</a></li>
+			<li id="slidedown"><a href="#">SlideDown</a></li>
+		</ul>
+
+		<p>BUTTONS HERE</p>
+
+		<div id="box">Testing jQuery functions</div>
 
 		<p>Paragraph added</p>
 		
